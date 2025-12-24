@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>In Between</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="main">
+      <h1>In Between Game</h1>
+      <p id="message">Welcome to In Between! Click "Start Game" to begin.</p>
+      <button id="start-game-btn">Start Game</button>
+      <div id="game-container">
+
+        <div id="draw-buttons-container">
+          <button id="firstCard-btn">
+            Draw First Card
+          </button>
+          <button id="secondCard-btn">
+            Draw Second Card
+          </button>
+          <input type="number" min="0" id="bet-input" placeholder="Bet" />
+          <button id="thirdCard-btn">
+            Draw Third Card
+          </button>
+        </div>
+
+        <div id="results-container">
+          <span id="cards-container-el">
+            <span id="firstCard-El">?</span>
+            <span> , </span>
+            <span id="secondCard-El">?</span>
+            <br>
+
+            <span id="possible-cards-container"></span>
+          </span>
+        </div>
+
+        <button id="reset-btn">Reset Game</button>
+        
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
